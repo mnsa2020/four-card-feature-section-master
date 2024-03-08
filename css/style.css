@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  background: hsl(0, 0%, 98%);
+}
+body header {
+  text-align: center;
+}
+body header p:first-child {
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: -2px;
+  word-spacing: 6px;
+  margin-bottom: -6px;
+}
+body header h1 {
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 14px;
+}
+body header p:last-child {
+  max-width: 500px;
+  margin-inline: auto;
+}
+@media (max-width: 1199px) {
+  body header p:first-child {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+  body header h1 {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+  body header p:last-child {
+    max-width: 400px;
+  }
+}
+body section {
+  padding-block: 4em;
+}
+body section .container {
+  padding-inline: 16px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+body section .container .card {
+  background: white;
+  max-width: 400px;
+  padding: 2em;
+  box-shadow: 0.3em 0.3em 1em hsl(229, 6%, 90%);
+  border-radius: 10px;
+  border-top: 5px solid;
+  min-width: 290px;
+}
+body section .container .card img {
+  display: block;
+  margin-left: auto;
+}
+body section .container .card:first-child {
+  border-color: hsl(180, 62%, 55%);
+}
+body section .container .card:last-child {
+  border-color: hsl(212, 86%, 64%);
+}
+body section .container .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+body section .container .middle .card:first-child {
+  border-color: hsl(0, 78%, 62%);
+}
+body section .container .middle .card:last-child {
+  border-color: hsl(34, 97%, 64%);
+}
+@media (max-width: 1199px) {
+  body section .container {
+    flex-direction: column;
+  }
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

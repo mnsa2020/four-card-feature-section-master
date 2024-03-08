@@ -1,0 +1,115 @@
+@use "variables" as var;
+@use "globals" as glb;
+
+// Body
+body {
+  height: 100vh;
+  background: var.$VeryLightGray;
+  // Header
+  header {
+    text-align: center;
+    p:first-child {
+      font-size: 2.5rem;
+      font-weight: 200;
+      letter-spacing: -2px;
+      word-spacing: 6px;
+      margin-bottom: -6px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: -2px;
+      margin-bottom: 14px;
+    }
+    p:last-child {
+      max-width: 500px;
+      margin-inline: auto;
+    }
+    @media (max-width: 1199px) {
+      p:first-child {
+        font-size: 1.5rem;
+        letter-spacing: normal;
+      }
+      h1 {
+        font-size: 1.5rem;
+        letter-spacing: normal;
+      }
+      p:last-child {
+        max-width: 400px;
+      }
+    }
+  }
+  // Header
+
+  // Section
+  section {
+    padding-block: 4em;
+    .container {
+      padding-inline: 16px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+
+      .card {
+        background: white;
+        max-width: 400px;
+        padding: 2em;
+        box-shadow: 0.3em 0.3em 1em hsl(229, 6%, 90%);
+        border-radius: 10px;
+        border-top: 5px solid;
+        min-width: 290px;
+        h3 {
+        }
+        p {
+        }
+        img {
+          display: block;
+          margin-left: auto;
+        }
+        &:first-child {
+          border-color: var.$Cyan;
+        }
+        &:last-child {
+          border-color: var.$Blue;
+        }
+      }
+      .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .card {
+          &:first-child {
+            border-color: var.$Red;
+          }
+          &:last-child {
+            border-color: var.$Orange;
+          }
+        }
+      }
+    }
+    @media (max-width: 1199px) {
+      .container {
+        flex-direction: column;
+        .card {
+          h3 {
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+  // Section
+
+  // Footer
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+  // Footer
+}
+// Body
